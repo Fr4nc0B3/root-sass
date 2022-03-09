@@ -33,7 +33,7 @@ header {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
     font-size: 1em; }
-  header .navbar-toggler {
+  header .navbar-toggler:hover {
     background-color: #7A5954; }
   header .navbar-collapse {
     justify-content: flex-end; }
@@ -81,9 +81,14 @@ main .is {
     border: none;
     background-color: #dfebc6;
     border-bottom: 3px solid #557e55;
-    font-weight: bold;
-    font-size: 13px;
     letter-spacing: .8px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold; }
   main .is .buttonIS {
     font-weight: bold; }
+    main .is .buttonIS input:hover {
+      width: 130%;
+      background-color: darkgreen;
+      font-size: 18px;
+      padding: 0px; }

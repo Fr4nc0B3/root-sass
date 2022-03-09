@@ -47,14 +47,25 @@ main{
 			border: none;
 			background-color: $bg-input;
 			border-bottom: 3px solid $border-is;
-			font-weight: bold;
-			font-size: 13px;
 			letter-spacing: .8px;
 			border-radius: 10px;
+			font:{
+				size:13px;
+				weight:bold;
+			}			
 		}
 		.buttonIS{
 			font:{
 				weight:bold;
+			}
+			input{
+				&:hover{
+					width: 130%;
+					background-color: $terciario;
+					font-size:18px;
+					padding:0px;
+
+				}
 			}
 		}
 	}	

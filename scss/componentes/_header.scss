@@ -22,7 +22,8 @@ header{
 		}
 	}
 	.navbar-toggler{
-		background-color:$secundario;
+		&:hover{
+			background-color:$secundario;}
 	}
 	.navbar-collapse{
 		justify-content:flex-end;
