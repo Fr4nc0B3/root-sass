@@ -1,0 +1,30 @@
+header{
+	background-color: $bg-haeder-foo;
+	.navbar{
+		a{
+			img{
+				height:100px;
+				width:120px;
+			}
+		}
+
+	}
+	.navbar-light{
+		.navbar-nav{
+			.nav-link.active{
+				color: $terciario;
+				font:{
+					family:$ff-secundaria;
+					weight:500;
+					size:1em;
+				}
+			}
+		}
+	}
+	.navbar-toggler{
+		background-color:$secundario;
+	}
+	.navbar-collapse{
+		justify-content:flex-end;
+	}
+}
