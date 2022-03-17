@@ -1,0 +1,44 @@
+.tituloH{
+	padding-left: 0px;
+	margin-top: 10px;
+	h1{
+		text-align: start;
+		font:{family:$ff-secundaria;
+			weight: normal;
+			size: 26px;}
+		letter-spacing: 1px;
+		line-height: 1.4em;
+		color: $primario;
+	    background-color: $secundario;
+		padding-left: 35%;
+	    padding-right: 15px;
+    	text-shadow: map-get($shadow,shadowA);
+	    display: inline;
+	}
+}
+
+.tituloU{
+	justify-content: flex-end;
+	padding-right: 0px;
+	h2{
+		font:{
+			family: $ff-secundaria;
+			weight: normal;
+			size: 26px;}
+		letter-spacing: 1px;
+		line-height: 1.4em;
+		color: $primario;
+	    background-color: $secundario;
+		padding-right: 35%;
+	    padding-left: 15px;
+    	text-shadow: map-get($shadow,shadowA);
+	    display: inline;
+	}
+}
+
+.ubi{
+    @include center(center,center,flex);
+    iframe{
+    	width: 300px;
+    }
+}

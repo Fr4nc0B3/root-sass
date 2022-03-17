@@ -1,0 +1,45 @@
+.titulo__secundarioM{
+	margin: 10px 0px;
+	margin-bottom: 5px;
+	padding-left: 0px;
+	h3{    
+		display: inline;
+		text-align: start;
+		font:{
+			family:$ff-secundaria;
+			weight: normal;
+			size: 26px;}
+		letter-spacing: 1px;
+		line-height: 2.4em;
+		color: $primario;
+	    background-color: $secundario;
+		padding-left: 35%;
+	    padding-right: 15px;
+    	text-shadow: map-get($shadow,shadowA);
+	}
+}
+
+.card{
+	margin: 10px;
+	max-width: 300px;
+	max-height: 450px;
+	min-height: 450px;
+	min-width: 300px;
+	.textoM{	
+		width: 100%;
+		margin: 0px;
+		h5{
+			color: $primario;
+    		text-shadow: map-get($shadow,shadowA);
+			font:{
+				size: 1.7em;
+				family: $ff-secundaria;
+				weight: 500;
+			}
+		}
+	}
+	img{
+		max-height: 250px;
+		min-height: 250px;
+	}
+}

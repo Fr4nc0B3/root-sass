@@ -1,0 +1,524 @@
+@media (min-width: 768px){
+
+	.hero{
+		.principal{
+			width: 100%;
+		}
+
+		h1{
+			padding-left: 12.5%;
+		}
+		p{
+			padding: 44%;
+		    padding-top: 1%;
+		    padding-left: 7%;
+		}
+	}
+
+	.titulo__secundario{
+		h2{
+			width: 45%;
+		}
+	}
+	.textoH{
+		width: 70%;
+    	margin: 0px 16%;
+	}
+
+	.textoM{
+		width: 70%;
+    	margin: 0px 16%;		
+	}
+
+	.carouselH{
+		padding: 50px 150px;
+	}
+
+	.carouselM{
+		padding: 50px 150px;
+	}
+
+	.noticias{
+		div{
+			h4{
+				font-size: 16px;
+			}
+		}
+	}
+	.log{
+		@include end(flex-end,center,flex)
+	}
+	.logo{
+		margin-right: 20px;
+	}
+	/*CONTACTO*/
+
+	.gridP{
+		margin-left: 10%;
+		padding: 10px;
+		align-items: flex-end;
+	}
+
+	.gridS{
+		padding: 10px;
+		align-items: flex-start;
+
+	}
+
+	.comentarios{
+		flex-flow: column;
+		textarea{
+			margin-left: 5.4%;
+	    	margin-right: 2%;
+	    	width: 82%;		
+		}
+		.button{
+		margin: 5px;
+		max-width: 150px;
+		}	
+	}
+
+	.cardbox{
+		max-width: 400px;
+	}
+	.card{
+		max-width: 150px;
+		margin: 10px 0px;
+		.textoM{
+			padding: 10px 0px;
+		}
+	}
+	/*HISTORIA*/
+
+
+
+	.centerH{
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;	}
+
+	.centerU{
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+	}
+	.presentacion {
+		padding: 5% 9%;
+	}
+	.ubi{
+		iframe{
+			width: 600px;		
+		}
+	}
+/*ANIMACIONES*/
+
+
+	.titulo__secundario{ 
+		h2{
+		animation-name: desplazamientoA;
+		animation-duration: 3.5s;
+		animation-fill-mode: forwards;}
+	}
+
+	@keyframes desplazamientoA {
+		from{
+			width: 35%;
+			position: relative;
+			padding-left: 0px;
+		}
+
+		to{
+			width: 55%;
+			padding-left: 20%;
+
+		}
+	}
+
+	.tituloH{ 
+		h1{
+		animation-name: desplazamiento;
+		animation-duration: 2.5s;
+		animation-fill-mode: forwards;}
+	}
+
+	.titulo__secundarioM{ 
+		h3{
+		animation-name: desplazamientoS;
+		animation-duration: 2.5s;
+		animation-fill-mode: forwards;}
+	}
+
+	@keyframes desplazamientoS {
+		from{
+			padding-left: 0px;
+			position: relative;
+		}
+
+		to{
+			padding-left: 50%;
+
+		}
+	}
+
+
+	@keyframes desplazamiento {
+		from{
+			padding-left: 0px;
+			position: relative;
+		}
+
+		to{
+			padding-left: 39%;
+
+		}
+	}
+
+
+
+	.tituloU{ 
+		h2{
+		animation-name: desplazamientoD;
+		animation-duration: 2.5s;
+		animation-fill-mode: forwards;}
+	}
+
+
+
+
+	@keyframes desplazamientoD {
+		from{
+			padding-right: 0px;
+			position: relative;
+		}
+
+		to{
+			padding-right: 50%;
+
+		}
+	}	
+
+
+}
+
+@media (min-width: 992px){
+
+	.navbar-expand-lg{
+		.navbar-collapse{
+			justify-content: flex-end;
+			margin-right: 35px;		
+		}
+	}
+
+	.index{
+		display: flex;
+		flex-direction: row;
+		.titycar{
+			width: 70%;
+
+			.correct{
+				padding-right: 0px;
+				margin-left: 8%;
+			}
+			.textoH{
+				width: 100%;
+				margin: 0px;
+				margin-top: 38%;
+			}
+			.textoM{
+				width: 100%;
+				margin: 0px;
+				margin-top: 38%;
+			}
+			.carouselH{
+				margin-bottom: 10px;
+				padding: 0px;
+
+			}
+
+			.carouselM{
+				margin-top: 10px;
+				padding: 0px;	
+			}		
+		}
+		.aside{
+			width: 30%;
+		}						
+	}
+
+	.hero{
+		height: 75vh;
+		.principal{
+			width: 100%;		
+		}
+		h1{
+			padding-left: 12.5%;			
+		}
+		p{
+			padding: 53%;
+		    padding-top: 1%;
+		    padding-left: 5%;
+		}
+	}
+	.tituloI{
+		margin-bottom: 30px;
+		.titulo__secundario{
+			h2{
+				width: 39%;			
+			}
+		}
+	}
+	.container-fluid{
+		.col-lg-12.noticias{
+			display: flex;
+			flex-flow: column wrap;
+			.col-lg-1{
+				h4{
+					font-size: 1em;			
+				}
+			}
+		}
+	}
+	.log{
+		@include end(flex-end,center,flex)
+	}
+
+	.logo{
+		margin-right: 20px;
+	}
+		/*CONTACTO*/
+
+	#video{
+		height: 60vh;
+	}
+
+	.form{
+        @include center(center,center,flex)
+        align-content:center;		
+
+		.gridP{
+			max-width: 300px;
+			margin-left: 0px;
+		}
+
+		.gridS{
+			max-width: 300px;
+		}
+
+		.comentarios{
+			max-width: 600px;
+			.inputText{
+				margin-left: 0px;
+			}
+		}
+	}
+	.footer{		 
+		.logo{
+			padding: 0px;
+		}
+	}
+    /*PRODUCTOS*/
+
+
+	.cardbox{
+		margin: 25px;
+	
+		.card{
+			max-width: 300px;
+			max-height: 450px;
+			min-height: 450px;
+			min-width: 300px;
+
+			img{
+				max-height: 250px;
+				min-height: 250px;
+			}
+		}	
+	}
+	.artic{
+		display: flex;
+		flex-direction: row;
+
+		.derrape{
+			max-width: 50%;
+			.tituloH{
+				h1{
+					line-height: 2.4;
+					font-size: 2em;
+				}
+			}
+		}
+
+		.tusi{
+			max-width: 50%;
+		
+			.tituloU{
+				margin-top: 24px;
+				h2{
+					line-height: 1.6;
+					font-size: 1.9em;			
+				}		
+			}
+			.ubi{
+				margin: 15px 10px;
+				padding: 10px;			
+			}
+		}
+	}
+	/*INICIO SESION*/
+
+	.is{
+		height: 200px;
+		width: 22%;
+		@include center(center,center,flex)
+		flex-direction: column;
+		border-radius: 30px;
+		background:$bg-is;
+		position: fixed;
+		margin-left: 10%;
+		padding: 15px;
+		margin-bottom: 10%;
+	
+		// input{
+		// 	width: 96%;
+		// 	padding: 7px;
+		// 	margin: 12px 0px;
+		// 	max-height: 30px;
+		// 	border: none;
+		// 	background-color: $bg-input;
+		// 	border-bottom: 3px solid $border-is;
+		// 	font:{
+		// 		weight: bold;
+		// 		size: 13px;}
+		// 	letter-spacing: .8px;
+		// 	border-radius: 10px;
+		// }
+		.buttonIS{
+			font-weight: bold;
+		}
+	}
+
+/*ANIMACIONES*/
+
+
+	.titulo__secundario{ 
+		h2{
+		animation-name: desplazamientoA;
+		animation-duration: 3.5s;
+		animation-fill-mode: forwards;}
+	}
+
+	@keyframes desplazamientoA {
+		from{
+			width: 25%;
+			position: relative;
+			padding-left: 0px;
+			display: none;
+		}
+
+		75%{
+			display: inline-block;
+		}
+
+		to{
+			width: 39%;
+			padding-left: 14%;
+
+		}
+	}
+
+	.tituloH{ 
+		h1{
+		animation-name: desplazamiento;
+		animation-duration: 2.5s;
+		animation-fill-mode: forwards;}
+	}
+
+	.titulo__secundarioM{ 
+		h3{
+		animation-name: desplazamientoS;
+		animation-duration: 2.5s;
+		animation-fill-mode: forwards;}
+	}
+
+	@keyframes desplazamientoS {
+		from{
+			padding-left: 0px;
+			position: relative;
+		}
+
+		to{
+			padding-left: 35%;
+
+		}
+	}
+
+
+	@keyframes desplazamiento {
+		from{
+			padding-left: 0px;
+			position: relative;
+		}
+
+		to{
+			padding-left: 25%;
+
+		}
+	}
+
+
+
+
+	.tituloU{
+		h2{
+		animation-name: desplazamientoD;
+		animation-duration: 2.5s;
+		animation-fill-mode: forwards;} 
+	}
+
+
+
+
+	@keyframes desplazamientoD {
+		from{
+			padding-right: 0px;
+			position: relative;
+		}
+
+		to{
+			padding-right: 30%;
+
+		}
+	}
+}
+	
+@media (min-width: 1200px) {
+	.form{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		.gridP{
+			align-items: flex-end;
+			max-width: 600px;
+				.inputContacto{
+					width: 300px;
+				}
+
+				.inputItem{
+					max-width: 300px;
+				}
+		}
+
+		.gridS{
+			flex-direction: column;
+			align-items: flex-start;
+			max-width: 600px;
+			.inputContacto{
+				width: 300px;
+			}
+
+			.inputItem{
+				max-width: 300px;
+			}			
+		}			
+	}	
+}	

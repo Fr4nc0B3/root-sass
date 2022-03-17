@@ -1,3 +1,23 @@
+.inputItem, .inputItem-IS {
+  width: 96%;
+  padding: 7px;
+  margin: 9px 0px;
+  max-height: 30px;
+  border: none;
+  background-color: #B29283;
+  border-left: 4px solid darkgreen;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: .8px;
+  border-radius: 10px;
+  max-width: 300px; }
+
+.inputItem-IS {
+  margin: 12px 0px;
+  background-color: #dfebc6;
+  border-bottom: 3px solid #557e55;
+  border-left: none; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -23,6 +43,73 @@ body {
     height: 100%;
     object-fit: cover; }
 
+.titulo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  background-color: #7A5954; }
+  .titulo h1 {
+    display: inline-block;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    color: #fdf1d8;
+    text-shadow: 1px 2px 1px black;
+    margin: 0px; }
+
+/*ANIMACIONES*/
+.titulo__secundario h2 {
+  animation-name: desplazamientoA;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes desplazamientoA {
+  from {
+    position: relative;
+    padding-left: 0px; }
+  to {
+    padding-left: 15%; } }
+
+.tituloH h1 {
+  animation-name: desplazamiento;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards; }
+
+.titulo__secundarioM h3 {
+  animation-name: desplazamientoS;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes desplazamientoS {
+  from {
+    padding-left: 0px;
+    position: relative; }
+  to {
+    padding-left: 80%; } }
+
+@keyframes desplazamiento {
+  from {
+    padding-left: 0px;
+    position: relative; }
+  to {
+    padding-left: 25%; } }
+
+.tituloU h2 {
+  animation-name: desplazamientoD;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes desplazamientoD {
+  from {
+    padding-right: 0px;
+    position: relative; }
+  to {
+    padding-right: 30%; } }
+
 header {
   background-color: #B29283; }
   header .navbar a img {
@@ -38,23 +125,38 @@ header {
   header .navbar-collapse {
     justify-content: flex-end; }
 
-.titulo {
+footer {
+  justify-content: space-between;
+  align-items: center;
   display: flex;
-  max-width: 100%;
-  justify-content: center;
-  background-color: #7A5954;
-  align-items: center; }
-  .titulo h1 {
-    display: inline-block;
+  background-color: #B29283; }
+  footer h3 {
+    display: inline;
+    background-color: transparent;
     text-align: center;
-    letter-spacing: 1px;
-    line-height: 1.4em;
-    color: #fdf1d8;
-    text-shadow: 1px 2px 1px black;
-    margin: 0px;
+    padding: 10px;
+    color: darkgreen;
+    font-size: 16px;
     font-family: "Oswald", sans-serif;
-    font-size: 32px;
-    font-weight: normal; }
+    font-weight: bold; }
+  footer .rrhh {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row; }
+    footer .rrhh img {
+      width: 30px;
+      height: 30px; }
+  footer .logo {
+    width: 95px;
+    height: 70px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px; }
+  footer .log {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex; }
 
 .over {
   overflow-y: hidden; }
@@ -92,3 +194,579 @@ main .is {
       background-color: darkgreen;
       font-size: 18px;
       padding: 0px; }
+
+.hero {
+  background-image: url(https://images.unsplash.com/photo-1504867991871-57c29096e624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 70vh; }
+  .hero h1 {
+    color: #fdf1d8;
+    text-shadow: 1px 2px 1px black;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 28px; }
+  .hero p {
+    color: #fdf1d8;
+    text-shadow: 1px 2px 1px black;
+    text-align: center;
+    line-height: 1em;
+    letter-spacing: 1.3px;
+    font-family: "Open sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px; }
+
+.tituloI {
+  padding: 0px; }
+  .tituloI div div .titulo__secundario {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px 0px 0px; }
+    .tituloI div div .titulo__secundario h2 {
+      font-family: "Oswald", sans-serif;
+      font-weight: normal;
+      font-size: 31px;
+      letter-spacing: 1px;
+      line-height: 2em;
+      color: #fdf1d8;
+      background-color: #7A5954;
+      padding: 0px 15px;
+      text-shadow: 1px 2px 1px black; }
+
+.textoH {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid;
+  background-color: #7A5954; }
+  .textoH h3 {
+    color: #fdf1d8;
+    text-shadow: 1px 2px 1px black;
+    font-size: 2em;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    margin-top: 12px; }
+  .textoH p {
+    font-family: "Open sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fdf1d8;
+    text-shadow: 1px 2px 1px black;
+    padding: 10px; }
+
+.textoM {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  background-color: #7A5954;
+  margin-top: 20px; }
+  .textoM h3 {
+    color: #fdf1d8;
+    text-shadow: 1px 2px 1px black;
+    font-size: 2em;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    margin-top: 12px; }
+  .textoM p {
+    font-family: "Open sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fdf1d8;
+    text-shadow: 1px 2px 1px black;
+    padding: 10px; }
+
+.noticias {
+  border: 2px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #7A5954;
+  margin-bottom: 20px; }
+  .noticias h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 31px;
+    letter-spacing: 1px;
+    line-height: 2em;
+    color: #fdf1d8;
+    background-color: #7A5954;
+    text-shadow: 1px 2px 1px black; }
+  .noticias div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid;
+    width: 100%;
+    height: 80px;
+    background-color: #fdf1d8;
+    border-radius: 10px;
+    margin: 10px; }
+  .noticias span {
+    text-align: center; }
+
+.presentacion {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 3%;
+  margin-left: 3px;
+  line-height: 1.4em;
+  text-align: justify;
+  font-size: 78%;
+  font-weight: 800;
+  text-shadow: -1px 0px 1px; }
+  .presentacion p {
+    font-family: "Open sans", sans-serif;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+    text-align: center; }
+
+form .gridP {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  form .gridP .inputContacto {
+    max-width: 300px;
+    min-width: 250px; }
+
+form .gridS {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  form .gridS .inputContacto {
+    max-width: 300px;
+    min-width: 250px; }
+
+form .consulta {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px; }
+  form .consulta select {
+    padding: 1px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid darkgreen;
+    background-color: #B29283;
+    font-size: 16px; }
+
+form .comentarios {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  form .comentarios textarea {
+    min-height: 150px;
+    width: 98%;
+    margin-bottom: 0px; }
+  form .comentarios .inputText {
+    width: 96%;
+    padding: 7px;
+    margin: 9px 0px;
+    max-height: 30px;
+    border: none;
+    background-color: #B29283;
+    border-left: 4px solid darkgreen;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: .8px;
+    border-radius: 10px;
+    max-width: 430px;
+    resize: none; }
+  form .comentarios .button {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 3px solid darkgreen;
+    background-color: #B29283;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500; }
+
+.titulo__secundarioM {
+  margin: 10px 0px;
+  margin-bottom: 5px;
+  padding-left: 0px; }
+  .titulo__secundarioM h3 {
+    display: inline;
+    text-align: start;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 2.4em;
+    color: #fdf1d8;
+    background-color: #7A5954;
+    padding-left: 35%;
+    padding-right: 15px;
+    text-shadow: 1px 2px 1px black; }
+
+.card {
+  margin: 10px;
+  max-width: 300px;
+  max-height: 450px;
+  min-height: 450px;
+  min-width: 300px; }
+  .card .textoM {
+    width: 100%;
+    margin: 0px; }
+    .card .textoM h5 {
+      color: #fdf1d8;
+      text-shadow: 1px 2px 1px black;
+      font-size: 1.7em;
+      font-family: "Oswald", sans-serif;
+      font-weight: 500; }
+  .card img {
+    max-height: 250px;
+    min-height: 250px; }
+
+.tituloH {
+  padding-left: 0px;
+  margin-top: 10px; }
+  .tituloH h1 {
+    text-align: start;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    color: #fdf1d8;
+    background-color: #7A5954;
+    padding-left: 35%;
+    padding-right: 15px;
+    text-shadow: 1px 2px 1px black;
+    display: inline; }
+
+.tituloU {
+  justify-content: flex-end;
+  padding-right: 0px; }
+  .tituloU h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    color: #fdf1d8;
+    background-color: #7A5954;
+    padding-right: 35%;
+    padding-left: 15px;
+    text-shadow: 1px 2px 1px black;
+    display: inline; }
+
+.ubi {
+  justify-content: center;
+  align-items: center;
+  display: flex; }
+  .ubi iframe {
+    width: 300px; }
+
+@media (min-width: 768px) {
+  .hero .principal {
+    width: 100%; }
+  .hero h1 {
+    padding-left: 12.5%; }
+  .hero p {
+    padding: 44%;
+    padding-top: 1%;
+    padding-left: 7%; }
+  .titulo__secundario h2 {
+    width: 45%; }
+  .textoH {
+    width: 70%;
+    margin: 0px 16%; }
+  .textoM {
+    width: 70%;
+    margin: 0px 16%; }
+  .carouselH {
+    padding: 50px 150px; }
+  .carouselM {
+    padding: 50px 150px; }
+  .noticias div h4 {
+    font-size: 16px; }
+  .log {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex; }
+  .logo {
+    margin-right: 20px; }
+  /*CONTACTO*/
+  .gridP {
+    margin-left: 10%;
+    padding: 10px;
+    align-items: flex-end; }
+  .gridS {
+    padding: 10px;
+    align-items: flex-start; }
+  .comentarios {
+    flex-flow: column; }
+    .comentarios textarea {
+      margin-left: 5.4%;
+      margin-right: 2%;
+      width: 82%; }
+    .comentarios .button {
+      margin: 5px;
+      max-width: 150px; }
+  .cardbox {
+    max-width: 400px; }
+  .card {
+    max-width: 150px;
+    margin: 10px 0px; }
+    .card .textoM {
+      padding: 10px 0px; }
+  /*HISTORIA*/
+  .centerH {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  .centerU {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; }
+  .presentacion {
+    padding: 5% 9%; }
+  .ubi iframe {
+    width: 600px; }
+  /*ANIMACIONES*/
+  .titulo__secundario h2 {
+    animation-name: desplazamientoA;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards; }
+  @keyframes desplazamientoA {
+    from {
+      width: 35%;
+      position: relative;
+      padding-left: 0px; }
+    to {
+      width: 55%;
+      padding-left: 20%; } }
+  .tituloH h1 {
+    animation-name: desplazamiento;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards; }
+  .titulo__secundarioM h3 {
+    animation-name: desplazamientoS;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards; }
+  @keyframes desplazamientoS {
+    from {
+      padding-left: 0px;
+      position: relative; }
+    to {
+      padding-left: 50%; } }
+  @keyframes desplazamiento {
+    from {
+      padding-left: 0px;
+      position: relative; }
+    to {
+      padding-left: 39%; } }
+  .tituloU h2 {
+    animation-name: desplazamientoD;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards; }
+  @keyframes desplazamientoD {
+    from {
+      padding-right: 0px;
+      position: relative; }
+    to {
+      padding-right: 50%; } } }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 35px; }
+  .index {
+    display: flex;
+    flex-direction: row; }
+    .index .titycar {
+      width: 70%; }
+      .index .titycar .correct {
+        padding-right: 0px;
+        margin-left: 8%; }
+      .index .titycar .textoH {
+        width: 100%;
+        margin: 0px;
+        margin-top: 38%; }
+      .index .titycar .textoM {
+        width: 100%;
+        margin: 0px;
+        margin-top: 38%; }
+      .index .titycar .carouselH {
+        margin-bottom: 10px;
+        padding: 0px; }
+      .index .titycar .carouselM {
+        margin-top: 10px;
+        padding: 0px; }
+    .index .aside {
+      width: 30%; }
+  .hero {
+    height: 75vh; }
+    .hero .principal {
+      width: 100%; }
+    .hero h1 {
+      padding-left: 12.5%; }
+    .hero p {
+      padding: 53%;
+      padding-top: 1%;
+      padding-left: 5%; }
+  .tituloI {
+    margin-bottom: 30px; }
+    .tituloI .titulo__secundario h2 {
+      width: 39%; }
+  .container-fluid .col-lg-12.noticias {
+    display: flex;
+    flex-flow: column wrap; }
+    .container-fluid .col-lg-12.noticias .col-lg-1 h4 {
+      font-size: 1em; }
+  .log {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex; }
+  .logo {
+    margin-right: 20px; }
+  /*CONTACTO*/
+  #video {
+    height: 60vh; }
+  .form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-content: center; }
+    .form .gridP {
+      max-width: 300px;
+      margin-left: 0px; }
+    .form .gridS {
+      max-width: 300px; }
+    .form .comentarios {
+      max-width: 600px; }
+      .form .comentarios .inputText {
+        margin-left: 0px; }
+  .footer .logo {
+    padding: 0px; }
+  /*PRODUCTOS*/
+  .cardbox {
+    margin: 25px; }
+    .cardbox .card {
+      max-width: 300px;
+      max-height: 450px;
+      min-height: 450px;
+      min-width: 300px; }
+      .cardbox .card img {
+        max-height: 250px;
+        min-height: 250px; }
+  .artic {
+    display: flex;
+    flex-direction: row; }
+    .artic .derrape {
+      max-width: 50%; }
+      .artic .derrape .tituloH h1 {
+        line-height: 2.4;
+        font-size: 2em; }
+    .artic .tusi {
+      max-width: 50%; }
+      .artic .tusi .tituloU {
+        margin-top: 24px; }
+        .artic .tusi .tituloU h2 {
+          line-height: 1.6;
+          font-size: 1.9em; }
+      .artic .tusi .ubi {
+        margin: 15px 10px;
+        padding: 10px; }
+  /*INICIO SESION*/
+  .is {
+    height: 200px;
+    width: 22%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background: rgba(159, 168, 124, 0.8);
+    position: fixed;
+    margin-left: 10%;
+    padding: 15px;
+    margin-bottom: 10%; }
+    .is .buttonIS {
+      font-weight: bold; }
+  /*ANIMACIONES*/
+  .titulo__secundario h2 {
+    animation-name: desplazamientoA;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards; }
+  @keyframes desplazamientoA {
+    from {
+      width: 25%;
+      position: relative;
+      padding-left: 0px;
+      display: none; }
+    75% {
+      display: inline-block; }
+    to {
+      width: 39%;
+      padding-left: 14%; } }
+  .tituloH h1 {
+    animation-name: desplazamiento;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards; }
+  .titulo__secundarioM h3 {
+    animation-name: desplazamientoS;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards; }
+  @keyframes desplazamientoS {
+    from {
+      padding-left: 0px;
+      position: relative; }
+    to {
+      padding-left: 35%; } }
+  @keyframes desplazamiento {
+    from {
+      padding-left: 0px;
+      position: relative; }
+    to {
+      padding-left: 25%; } }
+  .tituloU h2 {
+    animation-name: desplazamientoD;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards; }
+  @keyframes desplazamientoD {
+    from {
+      padding-right: 0px;
+      position: relative; }
+    to {
+      padding-right: 30%; } } }
+
+@media (min-width: 1200px) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .form .gridP {
+      align-items: flex-end;
+      max-width: 600px; }
+      .form .gridP .inputContacto {
+        width: 300px; }
+      .form .gridP .inputItem, .form .gridP .inputItem-IS {
+        max-width: 300px; }
+    .form .gridS {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 600px; }
+      .form .gridS .inputContacto {
+        width: 300px; }
+      .form .gridS .inputItem, .form .gridS .inputItem-IS {
+        max-width: 300px; } }

@@ -1,0 +1,29 @@
+//clase base//
+
+.inputItem{
+    width: 96%;
+    padding: 7px;
+    margin: 9px 0px;
+    max-height: 30px;
+    border: none;
+    background-color:$bg-haeder-foo;
+    border-left: 4px solid $terciario;
+    font:{
+        weight: bold;
+        size: 13px;}
+    letter-spacing: .8px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+
+//extend//
+
+.inputItem-IS{
+	@extend .inputItem;
+	margin: 12px 0px;
+	background-color: $bg-input;
+	border-bottom: 3px solid $border-is;
+	border-left: none;		
+	
+}

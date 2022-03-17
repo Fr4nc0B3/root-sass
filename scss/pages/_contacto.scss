@@ -1,0 +1,117 @@
+.presentacion{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 3%;
+    margin-left: 3px;
+    line-height: 1.4em;
+    text-align: justify;    
+    font:{
+        size: 78%;
+        weight: 800;}
+    text-shadow: map-get($shadow,shadowB);
+    p{
+        font-family:$ff-primaria;
+        line-height: 1.7em;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
+
+form{
+    .gridP{
+        @include center(center,center,flex)
+        flex-direction: column;
+        align-items: flex-end;  
+        .inputContacto{
+            max-width: 300px;
+            min-width: 250px;
+        }
+
+
+        
+    }
+    
+
+    .gridS{
+        @include center(center,center,flex)
+        flex-direction: column;
+        align-items: flex-start;    
+
+        .inputContacto{
+            max-width: 300px;
+            min-width: 250px;
+        }
+
+
+        // .inputItem {
+        //     width: 96%;
+        //     padding: 7px;
+        //     margin: 9px 0px;
+        //     max-height: 30px;
+        //     border: none;
+        //     background-color:$bg-haeder-foo;
+        //     border-left: 4px solid $terciario;
+        //     font:{
+        //         weight: bold;
+        //         size: 13px;}
+        //     letter-spacing: .8px;
+        //     border-radius: 10px;
+        //     max-width: 300px;
+        // }                   
+    }
+
+
+
+    .consulta{
+        text-align: center;
+        font:{
+            family:$ff-secundaria;
+            size: 20px;}
+        select{
+            padding: 1px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 2px solid $terciario;
+            background-color: $bg-haeder-foo;
+            font-size: 16px;
+        }
+    }
+
+    .comentarios{
+        @include center(center,center,flex)
+        flex-direction: column;
+        textarea{
+            min-height: 150px;
+            width: 98%;
+            margin-bottom: 0px;
+        }
+         .inputText {
+            width: 96%;
+            padding: 7px;
+            margin: 9px 0px;
+            max-height: 30px;
+            border: none;
+            background-color: $bg-haeder-foo;
+            border-left: 4px solid $terciario;
+            font:{
+                weight: bold;
+                size: 13px;}
+            letter-spacing: .8px;
+            border-radius: 10px;
+            max-width: 430px;
+            resize: none;
+        }
+        .button {
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 3px solid $terciario;
+            background-color: $bg-haeder-foo;
+            font:{size: 16px;
+                family: 'Oswald', sans-serif;
+                weight: 500;}
+        }                
+    }
+
+}

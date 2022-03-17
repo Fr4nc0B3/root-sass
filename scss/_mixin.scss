@@ -1,0 +1,17 @@
+@mixin center($centerJ, $centerA, $flex){
+	justify-content: $centerJ;
+	align-items: $centerA;
+	display: $flex;
+}
+
+@mixin between($between, $centerA, $flex){
+	justify-content: $between;
+	align-items: $centerA;
+	display: $flex;
+}
+
+@mixin end($end, $centerA, $flex){
+	justify-content: $end;
+	align-items: $centerA;
+	display:$flex;
+}
