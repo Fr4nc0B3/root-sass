@@ -338,8 +338,7 @@ form .gridP {
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
+  flex-direction: column; }
   form .gridP .inputContacto {
     max-width: 300px;
     min-width: 250px; }
@@ -348,8 +347,7 @@ form .gridS {
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
+  flex-direction: column; }
   form .gridS .inputContacto {
     max-width: 300px;
     min-width: 250px; }
@@ -509,10 +507,10 @@ form .comentarios {
   .gridP {
     margin-left: 10%;
     padding: 10px;
-    align-items: flex-end; }
+    align-items: center; }
   .gridS {
     padding: 10px;
-    align-items: flex-start; }
+    align-items: center; }
   .comentarios {
     flex-flow: column; }
     .comentarios textarea {
@@ -649,9 +647,11 @@ form .comentarios {
     align-content: center; }
     .form .gridP {
       max-width: 300px;
-      margin-left: 0px; }
+      margin-left: 0px;
+      aling-items: flex-end; }
     .form .gridS {
-      max-width: 300px; }
+      max-width: 300px;
+      aling-items: flex-start; }
     .form .comentarios {
       max-width: 600px; }
       .form .comentarios .inputText {

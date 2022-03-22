@@ -56,12 +56,12 @@
 	.gridP{
 		margin-left: 10%;
 		padding: 10px;
-		align-items: flex-end;
+		align-items: center;
 	}
 
 	.gridS{
 		padding: 10px;
-		align-items: flex-start;
+		align-items: center;
 
 	}
 
@@ -298,10 +298,12 @@
 		.gridP{
 			max-width: 300px;
 			margin-left: 0px;
+			aling-items: flex-end;
 		}
 
 		.gridS{
 			max-width: 300px;
+			aling-items: flex-start;
 		}
 
 		.comentarios{

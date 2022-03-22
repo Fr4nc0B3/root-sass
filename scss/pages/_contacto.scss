@@ -22,7 +22,7 @@ form{
     .gridP{
         @include center(center,center,flex)
         flex-direction: column;
-        align-items: flex-end;  
+
         .inputContacto{
             max-width: 300px;
             min-width: 250px;
@@ -36,7 +36,7 @@ form{
     .gridS{
         @include center(center,center,flex)
         flex-direction: column;
-        align-items: flex-start;    
+   
 
         .inputContacto{
             max-width: 300px;
