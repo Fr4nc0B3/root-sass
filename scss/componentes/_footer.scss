@@ -1,17 +1,22 @@
 footer{
+	height: 100px;
+	margin-top: 20px;
 		@include between(space-between,center,flex)
 		background-color: $bg-haeder-foo;
-		h3{
-			display: inline;
-			background-color: transparent;
-			text-align: center;
-			padding: 10px;
-			color: $terciario;
-			font:{
-				size: 16px;			
-				family: $ff-secundaria;
-				weight: bold;
-			}
+		a{ text-align: end;
+			h3{
+				display: inline;
+				background-color: transparent;
+				text-align: center;
+				padding: 10px;
+				color: $terciario;
+				font:{
+					size: 16px;			
+					family: $ff-secundaria;
+					weight: bold;
+			}			
+		}
+
 		}
 		.rrhh{
 			@include center(center,center,flex)
@@ -32,6 +37,6 @@ footer{
 		}
 
 		.log{
-			@include end(flex-end,center,flex)
+			@include end(flex-start,center,flex)
 		}
 }

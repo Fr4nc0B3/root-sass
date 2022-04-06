@@ -127,19 +127,23 @@ header {
     justify-content: flex-end; }
 
 footer {
+  height: 100px;
+  margin-top: 20px;
   justify-content: space-between;
   align-items: center;
   display: flex;
   background-color: #B29283; }
-  footer h3 {
-    display: inline;
-    background-color: transparent;
-    text-align: center;
-    padding: 10px;
-    color: darkgreen;
-    font-size: 16px;
-    font-family: "Oswald", sans-serif;
-    font-weight: bold; }
+  footer a {
+    text-align: end; }
+    footer a h3 {
+      display: inline;
+      background-color: transparent;
+      text-align: center;
+      padding: 10px;
+      color: darkgreen;
+      font-size: 16px;
+      font-family: "Oswald", sans-serif;
+      font-weight: bold; }
   footer .rrhh {
     justify-content: center;
     align-items: center;
@@ -155,7 +159,7 @@ footer {
     text-align: right;
     padding-right: 20px; }
   footer .log {
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     display: flex; }
 
